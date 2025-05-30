@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLInicioSesionController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recurso/pexels-guzel-sadykova-3331480-21952378.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Button layoutX="106.0" layoutY="341.0" mnemonicParsing="false" onAction="#btnAutenticar" text="Ingresar" />
+            <TextField fx:id="tfUsuario" layoutX="30.0" layoutY="167.0" promptText="myuser" />
+            <PasswordField fx:id="tfPassword" layoutX="30.0" layoutY="269.0" promptText="securepassword" />
+            <Label layoutX="70.0" layoutY="26.0" text="Bienvenido(a)">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="9.0" layoutY="43.0" prefHeight="110.0" prefWidth="275.0" text="Ingresa tu usuario y password para iniciar sesion" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="30.0" layoutY="140.0" text="Usuario:" />
+            <Label layoutX="30.0" layoutY="242.0" text="Password" />
+            <Label fx:id="lbErrorUsuario" layoutX="30.0" layoutY="206.0" prefHeight="27.0" prefWidth="224.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbErrorPassword" layoutX="30.0" layoutY="308.0" prefHeight="27.0" prefWidth="224.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
